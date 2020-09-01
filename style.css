@@ -1,0 +1,257 @@
+/*NAV E MENU*/
+.nav-link-menu{
+    margin-left: 30px;
+    color: black;
+    padding-top: 20px;
+    padding-right: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: inset 0 0 1em darkgray, 0 0 1em darkgray;
+}
+.navbar-brand{
+    margin-left: 300px;
+    padding-left: 50px;
+}
+.nav-link-notif{
+    padding-left: 20px;
+
+}
+
+.nav-link-ativo{
+    font-weight: bold;
+    margin-left: 30px;
+    color: black;
+    padding-top: 20px;
+    padding-right: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/*Abas*/
+.tablinks{
+    border:none;
+    background-color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.active{
+    color: green;
+  }
+  .tabcontent {
+    display: none;
+  }
+
+/*Menu*/
+.col1{
+    padding-top:20px;
+    font-size: 50px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.col2{
+    padding-top:20px;
+    font-size: 50px;
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.menugrid{
+    padding-top:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.col4{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+.col5{
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-right:75%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Seção dos cartazes*/
+.col6{
+    padding-top: 30px;
+}
+.col7{
+    padding-left:10px;
+    padding-top:20px ;
+    padding-right: 10px;
+    background-color: black;
+}
+.col9{
+    background-color: rgb(67, 74, 87);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.col10{
+    background-color: rgb(67, 74, 87);
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 14px;
+    padding-left: 20px;
+    padding-top: -10px;
+    font-weight: bold;
+}
+.col11{
+    padding-top:15px ;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: black;
+
+}
+.col12{
+    padding-top:10px ;
+    padding-right: 257px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+}
+.col13{
+    padding-top:0px ;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+}
+.col14{
+    padding-top:0px ;
+    padding-right: 220px;
+    background-color: black;
+    color: green;
+    font-weight: bold;
+}
+
+.col15{
+    background-color: black;
+    padding-left:10px;
+    padding-top:20px ;
+    padding-right: 10px;
+    margin-left: -46px ;
+}
+.col16{
+    padding-top:10px ;
+    padding-right: 288px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+}
+
+.col17{
+    padding-top:0px ;
+    padding-right: 225px;
+    background-color: black;
+    color: green;
+    font-weight: bold;
+}
+
+.col20{
+    padding-top:10px ;
+    padding-right: 182px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+}
+.col21{
+    padding-top:0px ;
+    padding-right: 221px;
+    background-color: black;
+    color: green;
+    font-weight: bold;
+}
+
+.col22{
+    padding-top:10px ;
+    padding-right: 228px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+}
+
+.col23{
+    padding-top:0px ;
+    padding-right: 155px;
+    background-color: black;
+    color: green;
+    font-weight: bold;
+}
+
+.estrela{
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    margin-top:-50px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    color: white;
+}
+.estrela-rappa{
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    margin-top:-50px;
+    margin-left: -12px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    color: white;
+
+}
+#more1,#more2,#more3,#more4{
+    background-color: black;
+    border: none;
+}
+
+#num1,#num2,#num3,#num4,#ARTnum1,#ARTnum3,#GENnum2,#GENnum4{
+    background-color: black;
+    border: none;
+    color: white;
+    width: 35px;
+    padding-left: 10px;
+}
+
+/*Pagination*/
+.paginas{
+    margin-top:20px;
+}
+.pagination > li > a
+{
+    background-color: white;
+    color: green;
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: green !Important;
+    border: solid 1px green !Important;
+}
+
