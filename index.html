@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>My Concert TV</title>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="script.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--NAVEGADOR-->
+    <nav class="navbar navbar-expand-md navbar-fixed-top navbar-dark bg-dark main-nav">
+        <div class="container">
+            <ul class="nav navbar-nav ">
+                <li class="nav-item ">     
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="Logos/rsz_usuarios_branco.png"></a>
+                </li>
+            </ul>
+             <!--Logo-->
+              <li class="nav-item"><a class="navbar-brand" href="#"></a><img src="Logos/logotipo.png"></a></li>
+
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link-notif" href="#"><img src="Logos/rsz_notificacao_branco.png"></a>
+                </li>
+            </ul>
+            <!--Search bar-->>
+            <div class="input-group col-md-4">
+                <input class="form-control py-2" type="search" placeholder="Pesquisar Artistas..." id="example-search-input">
+                <span class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">
+                      <i class="fa fa-search" style="color: white;"></i>
+                  </button>
+                </span>
+          </div>
+
+              <ul class="nav navbar-navs">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="Logos/rsz_setting_verde.png"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--MENU-->
+    <ul class="nav justify-content-center menu">
+        <li class="nav-item">
+          <a class="nav-link-menu" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-menu" href="#">CANAIS</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link-ativo" href="#">EM TURNÊ <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link-menu" href="#">AO VIVO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-menu" href="#">SOBRE</a>
+          </li>
+    </ul>
+
+      <!--Menu Dos Cartazes-->
+      <div class="container main-container">
+        <div class="row ml-5">
+          <!--Coluna 1-->
+          <div class="col1">EM TURNÊ</div>
+          <!--Coluna 2-->
+          <div class="col2">!</div>
+
+          <!--Coluna 3-->
+          <div class="col3">
+              <div class="menugrid ml-4 mt-4">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <button class="tablinks" onclick="openCity(event, 'Todos')">TODOS</button>
+                  </li>
+                <li class="nav-item">
+                  <button class="tablinks" onclick="openCity(event, 'Artistas')">ARTISTAS</button>
+                </li>
+                <li class="nav-item">
+                  <button class="tablinks" onclick="openCity(event, 'Genero')">GÊNERO</button>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="row ml-5">
+            <!--Coluna 4-->
+            <div class="col4 ">
+              PRÓXIMOS
+            </div>
+            <!--Coluna 5-->
+            <div class="col5 ">
+                <div class="barra">
+                    EVENTOS
+                </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="Todos" class="tabcontent">
+        <div class="container cartazes1">
+            <div class="row ml-5">
+              <!--Festival Cores-->
+              <div class="col6"><img src="Logos/rsz_5d2bbf0f17f40.png"></div>
+              <!--O Rappa-->
+              <div class="col6 ml-4"><img src="Logos/rsz_cartaz-o-rappa.jpg"></div>   
+            </div>
+            <!--Section de baixo da foto do Festival Cores-->
+            <div class="row ml-5 ">
+              <div class="estrela"><button type="button" id="more1" onclick="more1()"><img src="Logos/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num1"></div>
+            </div>
+            <div class="row ml-5 ">
+              <div class="col7"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i>
+            </div>
+        
+              <div class="col8">
+                <div class="row ml-auto "><div class="col9">OUT</div></div>
+                <div class="row ml-auto "><div class="col10">24</div></div>
+              </div>
+        
+              <div class="col11 ml-2"><img src="Logos/rsz_redes_sociais_verde.png"></i></div>
+              <div class="col8">
+                <div class="row ml-auto "><div class="col12">Festival Cores</div></div>
+                <div class="row ml-auto "><div class="col13">00:00H</div>
+                                          <div class="col14">São Paulo</div></div>
+              </div>
+        
+              <!--Section de baixo da foto do Rappa-->
+              <div class="row ml-5 ">
+                <div class="estrela-rappa"><button type="button" id="more3" onclick="more3()"><img src="Logos/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num3"></div>
+              </div>
+              <div class="row ml-5 ">
+              <div class="col15"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i></div>
+        
+              <div class="col8">
+                <div class="row ml-auto "><div class="col9">OUT</div></div>
+                <div class="row ml-auto "><div class="col10">21</div></div>
+              </div>
+        
+              <div class="col11 ml-2"><img src="Logos/rsz_redes_sociais_verde.png"></i></div>
+              <div class="col8">
+                <div class="row ml-auto "><div class="col16">O Rappa</div></div>
+                <div class="row ml-auto "><div class="col13">00:00H</div>
+                                          <div class="col17">Ária Hall</div></div>
+              </div>
+        
+            </div>
+            </div>
+          </div>
+        <div class="container cartazes2">
+            <div class="row ml-5">
+              <!--Claudia Leitte-->
+              <div class="col6"><img src="Logos/rsz_maxresdefault.jpg"></div>
+              <!--Simone e Simaria-->
+              <div class="col6 ml-4"><img src="Logos/rsz_maxresdefault_1.jpg"></div>
+            </div>
+        
+            <!--Section de baixo da foto da Claudia Leitte-->
+            <div class="row ml-5 ">
+              <div class="estrela"><button type="button" id="more2" onclick="more2()"><img src="Logos/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num2"></div>
+            </div>
+            <div class="row ml-5 ">
+              <div class="col7"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i>
+            </div>
+            <div class="col8">
+              <div class="row ml-auto "><div class="col9">MAI</div></div>
+              <div class="row ml-auto "><div class="col10">23</div></div>
+            </div>
+        
+            <div class="col11 ml-2"><img src="Logos/rsz_redes_sociais_verde.png"></i></div>
+            <div class="col8">
+              <div class="row ml-auto "><div class="col20">Saudade - Claudia Leitte</div></div>
+              <div class="row ml-auto "><div class="col13">16:00H</div>
+                                        <div class="col21">São Paulo</div></div>
+            </div>
+        
+            <!--Section de baixo da foto da Simone e Simaria-->
+            <div class="row ml-5 ">
+              <div class="estrela-rappa"><button type="button" id="more4" onclick="more4()"><img src="Logos/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num4"></div>
+            </div>
+            <div class="row ml-5 ">
+              <div class="col15"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i></div>
+        
+              <div class="col8">
+                <div class="row ml-auto "><div class="col9">DEZ</div></div>
+                <div class="row ml-auto "><div class="col10">10</div></div>
+              </div>
+        
+              <div class="col11 ml-2"><img src="Logos/rsz_redes_sociais_verde.png"></i></div>
+              <div class="col8">
+                <div class="row ml-auto "><div class="col22">Simone & Simaria</div></div>
+                <div class="row ml-auto "><div class="col13">20:00H</div>
+                                          <div class="col23">Cabana Multishow</div></div>
+              </div>
+        
+            </div>
+            </div>
+          </div>
+      </div>
+
+      <div id="Artistas" class="tabcontent">
+        <div class="container cartazes1">
+          <div class="row ml-5">
+            <!--Festival Cores-->
+            <div class="col6"><img src="Logos/rsz_5d2bbf0f17f40.png"></div>
+            <!--O Rappa-->
+            <div class="col6 ml-4"><img src="Logos/rsz_cartaz-o-rappa.jpg"></div>   
+          </div>
+          <!--Section de baixo da foto do Festival Cores-->
+          <div class="row ml-5 ">
+            <div class="estrela"><button type="button" id="more1" onclick="more1()"><img src="Logos/rsz_estrela_branca.png"></button><input type="number" name="numero" id="ARTnum1"></div>
+          </div>
+          <div class="row ml-5 ">
+            <div class="col7"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i>
+          </div>
+      
+            <div class="col8">
+              <div class="row ml-auto "><div class="col9">OUT</div></div>
+              <div class="row ml-auto "><div class="col10">24</div></div>
+            </div>
+      
+            <div class="col11 ml-2"><img src="Logos/rsz_redes_sociais_verde.png"></i></div>
+            <div class="col8">
+              <div class="row ml-auto "><div class="col12">Festival Cores</div></div>
+              <div class="row ml-auto "><div class="col13">00:00H</div>
+                                        <div class="col14">São Paulo</div></div>
+            </div>
+      
+            <!--Section de baixo da foto do Rappa-->
+            <div class="row ml-5 ">
+              <div class="estrela-rappa"><button type="button" id="more3" onclick="more3()"><img src="Logos/rsz_estrela_branca.png"></button><input type="number" name="numero" id="ARTnum3"></div>
+            </div>
+            <div class="row ml-5 ">
+            <div class="col15"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i></div>
+      
+            <div class="col8">
+              <div class="row ml-auto "><div class="col9">OUT</div></div>
+              <div class="row ml-auto "><div class="col10">21</div></div>
+            </div>
+      
+            <div class="col11 ml-2"><img src="Logos/rsz_redes_sociais_verde.png"></i></div>
+            <div class="col8">
+              <div class="row ml-auto "><div class="col16">O Rappa</div></div>
+              <div class="row ml-auto "><div class="col13">00:00H</div>
+                                        <div class="col17">Ária Hall</div></div>
+            </div>
+      
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Genero" class="tabcontent">
+        <div class="container cartazes2">
+          <div class="row ml-5">
+            <!--Claudia Leitte-->
+            <div class="col6"><img src="Logos/rsz_maxresdefault.jpg"></div>
+            <!--Simone e Simaria-->
+            <div class="col6 ml-4"><img src="Logos/rsz_maxresdefault_1.jpg"></div>
+          </div>
+      
+          <!--Section de baixo da foto da Claudia Leitte-->
+          <div class="row ml-5 ">
+            <div class="estrela"><button type="button" id="more2" onclick="more2()"><img src="Logos/rsz_estrela_branca.png"></button><input type="number" name="numero" id="GENnum2"></div>
+          </div>
+          <div class="row ml-5 ">
+            <div class="col7"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i>
+          </div>
+          <div class="col8">
+            <div class="row ml-auto "><div class="col9">MAI</div></div>
+            <div class="row ml-auto "><div class="col10">23</div></div>
+          </div>
+      
+          <div class="col11 ml-2"><img src="Logos/rsz_redes_sociais_verde.png"></i></div>
+          <div class="col8">
+            <div class="row ml-auto "><div class="col20">Saudade - Claudia Leitte</div></div>
+            <div class="row ml-auto "><div class="col13">16:00H</div>
+                                      <div class="col21">São Paulo</div></div>
+          </div>
+      
+          <!--Section de baixo da foto da Simone e Simaria-->
+          <div class="row ml-5 ">
+            <div class="estrela-rappa"><button type="button" id="more4" onclick="more4()"><img src="Logos/rsz_estrela_branca.png"></button><input type="number" name="numero" id="GENnum4"></div>
+          </div>
+          <div class="row ml-5 ">
+            <div class="col15"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i></div>
+      
+            <div class="col8">
+              <div class="row ml-auto "><div class="col9">DEZ</div></div>
+              <div class="row ml-auto "><div class="col10">10</div></div>
+            </div>
+      
+            <div class="col11 ml-2"><img src="Logos/rsz_redes_sociais_verde.png"></i></div>
+            <div class="col8">
+              <div class="row ml-auto "><div class="col22">Simone & Simaria</div></div>
+              <div class="row ml-auto "><div class="col13">20:00H</div>
+                                        <div class="col23">Cabana Multishow</div></div>
+            </div>
+      
+          </div>
+          </div>
+        </div>
+    </div>
+    
+    <!--Pagination-->
+      <div class="container paginas mr-5">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+</body>
+</html>
